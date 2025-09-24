@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">Sardine</div>
+  <nav class="nav-links">
+    <a href="../html/Accueil.html">Accueil</a>
+    <a href="/index.html">Travaux</a>
+    <a href="#histoire">Mon histoire</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="burger">&#9776;</div>
+</header>
+<section class="intro">
+  <div class="intro-text">
+    <h1>Je suis Amandine</h1>
+    <p>Animatrice multimédia & développeuse front-end. Je fusionne Edutech et le code pour créer des expériences immersives, expressives et audacieuses. Mon travail est une extension de moi-même : Transmettre, partager, concevoir, crée. </p>
+  </div>
+  <div class="intro-photo"></div>
+</section>
+<section class="gallery">
+  <div class="gallery-row">
+    <img src="../image/posteroseminecraft.png" alt="Moi 1">
+    <img src="../image/Hailuo_Image_crée moi un hamster mignon qui_426951984549552137.png" alt="Moi 2">
+    <img src="../image/Hailuo_Image_fait moi une image café et cod_426953146946371593.png" alt="Moi 3">
+    <img src="../image/Hailuo_Image_fait moi une image de sardine _426953803560439816 (1).png" alt="Moi 4">
+    <img src="../image/Hailuo_Image_fait un hamster commun tout br_426978785309011973.png" alt="Moi 5">
+    <img src="../image/photoProfil.jpg" alt="Moi 6">
+  </div>
+</section>
+<section class="camber-section">
+ <div class="camber-right">
+     <h3>En partie codeuse</h3>
+    <ul>
+      <li>Développement front-end</li>
+      <li>HTML / CSS</li>
+      <li>JavaScript (en quelque sorte)</li>
+      <li>Je parle mal à mon ordi quand ça bug.</li>
+      <li>Café fumant</li>
+    </ul>
+  </div>
+  <div class="camber-image">
+    <img src="../image/ancode.jpg" alt="Camembert Camber">
+  </div>
+ <div class="camber-left">
+    <h3>En partie Animatrice multimédia</h3>
+    <ul>
+      <li>Apprentissage du code ludiquement</li>
+      <li>Robotique</li>
+      <li>Micro:bit, scratch, arduino,...</li>
+      <li>Electronqiue</li>
+      <li>Transmettre mon savoir</li>
+    </ul>
+  </div> 
+</section>
+<section class="facts-section">
+  <div class="facts-image"></div>
+  <div class="facts-text">
+    <h3>Faits aléatoires</h3>
+    <ul>
+      <li>Je suis légèrement accro aux Jeux vidéo</li>
+      <li>Une petite série, c’est mon moment zen</li>
+      <li>Je suis fan des sauts en parachute</li>
+      <li>Je suis maman</li>
+      <li>J’adore cuisiner (la pâtisserie)</li>
+      <li>Je suis passionnée par le dessin</li>
+      <li>J’aime créer des choses avec mes mains</li>
+      <li>Mon plat favoris Chicons</li>
+      <li>Je bois beaucoup de café</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="competences">
+  <h2>Mes compétences</h2>
+
+  <div class="levels">
+    <span>Avancer</span>
+    <span>Intermédiaire</span>
+    <span>Geek</span>
+    <span>Débutant</span>
+  </div>
+
+  <div class="bars">
+    <div class="bar-container">
+      <div class="bar boire" style="height: 95%;"></div>
+      <span>Animatrcie</span>
+    </div> 
+    <div class="bar-container">
+      <div class="bar figma" style="height: 80%;"></div>
+      <span>Front-end</span>
+    </div>
+    <div class="bar-container">
+      <div class="bar design" style="height: 70%;"></div>
+      <span>Edutech</span>
+    </div>
+    <div class="bar-container">
+      <div class="bar jardin" style="height: 50%;"></div>
+      <span>Informatique</span>
+    </div>
+    <div class="bar-container">
+      <div class="bar sport" style="height: 40%;"></div>
+      <span>Indesgn</span>
+    </div>
+  </div>
+</section>
+<section class="histoire">
+  <div class="histoire-visuel">
+    <div class="image-carree">
+      <img src="../image/Hailuo_Image_fait un hamster commun tout br_426978785309011973.png" alt="Image carrée">
+      <div class="image-ronde">
+        <img src="../image/photocontact.PNG" alt="Image ronde">
+      </div>
+    </div>
+  </div>
+  <div class="histoire-texte">
+    <h2>Mon histoire</h2>
+    <p>Je suis une maman solo. Mon parcours n’a rien d’un conte de fées il est fait de silences lourds, de murs à franchir, de nuits sans fin. J’ai traversé des zones que beaucoup préfèrent ignorer.</p>
+    <a href="#mon-histoire" class="btn-histoire">Lire mon histoire</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Sardine. Tous droits réservés.</p>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Portfolio</a></li>
+        <li><a href="./Accueil.html">Accueil</a></li>
+        <li>+32472985832</li>
+        <li>Letellier.ama@gmail.com</li>
+      </ul>
+    </nav>
+  </div>
+</footer> 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>

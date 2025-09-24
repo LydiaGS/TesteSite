@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Sardine</title>
+  <link rel="stylesheet" href="./Public/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">Sardine</div>
+  <nav class="nav-links">
+    <a href="./Public/html/Accueil.html">Accueil</a>
+    <a href="/index.html">Travaux</a>
+    <a href="#histoire">Mon histoire</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="burger">&#9776;</div>
+</header>
+
+  <section class="split">
+    <div class="left">
+      <div class="paint-overlay">
+        <div class="coup rose"></div>
+        <div class="coup mauve"></div>
+        <div class="coup rouge"></div>
+      </div>
+      <img src="./Public/image/photocontact.PNG" alt="Photo Sardine" class="photo designer" />
+      <h1>Animatrice multimédia</h1>
+      <p>Passionnée par la transmission du savoir.</p>
+    </div>
+
+    <div class="right">
+      <div class="code-background">
+        <div class="code-fragment">function hello() { return "Sardine"; }</div>
+        <div class="code-fragment">&lt;div class="hero"&gt;Design & Code&lt;/div&gt;</div>
+        <div class="code-fragment">const mood = "immersive";</div>
+        <div class="code-fragment">body { background: #fff; }</div>
+        <div class="code-fragment">console.log("Creative autonomy");</div>
+      </div>
+      <img src="./Public/image/photocontact.PNG" alt="Photo Sardine" class="photo coder" />
+      <h1>&lt;Codeuse&gt;</h1>
+      <p>Front-End Developer, Passionnée par le code, j'aime concevoir et imaginer.</p>
+    </div>
+  </section>
+  <br><br><br>
+<section class="travaux">
+ <div class="section-title">
+  <span class="line"></span>
+  <h2>Quelques-uns de mes derniers travaux</h2>
+  <span class="line"></span>
+</div>
+  <div class="cards">
+    <div class="card">
+      <img src="./Public/image/Hailuo_Image_fait moi une image de sardine _426953803560439816 (1).png" alt="Projet 1">
+      <h3>Création d'un robots avec micro:bit</h3>
+      <p>Création d’un robot en carton qui évite les obstacles.</p>
+    </div>
+    <div class="card">
+      <img src="./Public/image/bannière.jpg" alt="Projet 2">
+      <h3>Portfolio interactif</h3>
+      <p>Développement d’un Portfolio immersif avec animations et navigation fluide.</p>
+    </div>
+    <div class="card">
+      <img src="./Public/image/Hailuo_Image_fait moi une image café et cod_426953146946371593.png" alt="Projet 3">
+      <h3>Site web</h3>
+      <p>Création d'un site web pour un magasin.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Sardine. Tous droits réservés.</p>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Portfolio</a></li>
+        <li><a href="./Public/html/Accueil.html">Accueil</a></li>
+        <li>+32472985832</li>
+        <li>Letellier.ama@gmail.com</li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+  <script src="./Public/javascripts/scripts.js"></script>
+</body>
+</html>
+
+
